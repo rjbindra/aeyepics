@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEYEPICS | AI Art Gallery</title>
+  <meta name="description" content="AEYEPICS — AI-generated art. Surreal • Cosmic • Epic visuals.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>AEYEPICS</h1>
+    <p class="tag">AI × Imagination — Surreal • Cosmic • Epic</p>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="grid" id="gallery-grid" aria-live="polite"></div>
+      <button id="load-more" class="btn">Load More</button>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p><strong>AEYEPICS</strong> is a curated collection of AI-generated worlds — dragons, neon cities, zen gardens, and cosmic vistas. Built to be fast, minimal, and easy to update.</p>
+      <ul>
+        <li>Update images via <code>gallery.json</code></li>
+        <li>Responsive grid + lightbox</li>
+        <li>Free to host on GitHub Pages / Netlify</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Collaborations, prints, commissions:</p>
+      <p>
+        <a class="btn" href="mailto:hello@aeyepics.art">Email</a>
+        <a class="btn outline" href="https://instagram.com/aeyepics" target="_blank" rel="noopener">Instagram</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> AEYEPICS • Built with ♥ and AI</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="close" aria-label="Close">×</button>
+    <img id="lightboxImg" alt="Artwork preview">
+    <p id="caption"></p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
